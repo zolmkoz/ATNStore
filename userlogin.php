@@ -17,7 +17,7 @@ if(isset($_POST['user_login']))
     $check_user="select * from users WHERE user_email='$user_email' AND user_password='$user_password'";
 
  
-    $run=mysqli_query($db_con,$check_user);
+    $run=mysqli_query($$DB_con,$check_user);
 
     if(mysqli_num_rows($run))
     {

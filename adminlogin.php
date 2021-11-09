@@ -16,7 +16,7 @@ if (isset($_POST['admin_login'])) {
     $check_admin = "select * from admin WHERE admin_username='$admin_username' AND admin_password='$admin_password'";
 
 
-    $run = mysqli_query($db_con, $check_admin);
+    $run = mysqli_query($$DB_con, $check_admin);
 
     if (mysqli_num_rows($run)) {
         echo "<script>alert('You're successfully login!')</script>";

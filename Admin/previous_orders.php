@@ -20,7 +20,7 @@ if(!$_SESSION['admin_username'])
 	if(isset($_GET['previous_id']) && !empty($_GET['previous_id']))
 	{
 		$view_id = $_GET['previous_id'];
-		$stmt_edit = $db_con->prepare('SELECT * FROM users WHERE user_id=:user_id');
+		$stmt_edit = $DB_con->prepare('SELECT * FROM users WHERE user_id=:user_id');
 		$stmt_edit->execute(array(':user_id'=>$view_id));
 		$edit_row = $stmt_edit->fetch(PDO::FETCH_ASSOC);
 		extract($edit_row);

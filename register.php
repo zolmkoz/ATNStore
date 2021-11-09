@@ -14,7 +14,7 @@ if (isset($_POST['register'])) {
 
 
     $check_user = "select * from users WHERE user_email='$user_email'";
-    $run_query = mysqli_query($dbcon, $check_user);
+    $run_query = mysqli_query($$DB_con, $check_user);
 
     if (mysqli_num_rows($run_query) > 0) {
         echo "<script>alert('Customer is already exist, Please try another one!')</script>";
@@ -23,7 +23,7 @@ if (isset($_POST['register'])) {
     }
 
     $saveaccount = "insert into users (user_email,user_password,user_firstname,user_lastname,user_address) VALUE ('$user_email','$user_password','$user_firstname','$user_lastname','$user_address')";
-    mysqli_query($dbcon, $saveaccount);
+    mysqli_query($$DB_con, $saveaccount);
     echo "<script>alert('Data successfully saved, You may now login!')</script>";
     echo "<script>window.open('index.php','_self')</script>";
 }
