@@ -11,7 +11,7 @@ if (isset($_POST['order_save'])) {
     $save_order_details = "INSERT INTO orderdetails (user_id,order_name,order_price,order_quantity,order_total,order_status,order_date) 
     VALUE ('$user_id','$order_name','$order_price','$order_quantity','$order_total','$order_status',CURDATE())";
 
-    mysqli_query($dbcon, $save_order_details);
+    mysqli_query($DB_con, $save_order_details);
     echo "<script>alert('Item successfully added to cart!')</script>";
     echo "<script>window.open('shop.php?id=1','_self')</script>";
 }
