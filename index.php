@@ -247,7 +247,7 @@ session_start();
                        <h4>2019<br /> Bethpage State Park, Farmingdale, New York</h4>
                    <p >
                        CWe are very honored to be the platinum sponsor of PGA CHAMPIONSHIP 2019. We have sponsored $ 10 million, all ATN Store clubs sponsor athletes, plus we sponsor more than 300 awards. big and small bonus for the prize. 
-                       We will continue to sponsor competitions like these to create more playground for golfers..
+                       We will continue to sponsor competitions like these to create more playground for golfers....
                        
                    </p>
                 </div>
