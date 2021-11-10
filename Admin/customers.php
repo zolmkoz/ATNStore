@@ -52,7 +52,7 @@ if(!$_SESSION['admin_username'])
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ATN Store</title>
-	 <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon" />
+	 <link rel="shortcut icon" href="../assets/img/logotop.gif" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="css/local.css" />
