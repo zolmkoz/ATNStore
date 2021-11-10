@@ -214,7 +214,7 @@ include("config.php");
 		echo "<br />";
 		echo '<div class="alert alert-default" style="background-color:#033c73;">
                        <p style="color:white;text-align:center;">
-                       &copy 2021 Greenwich iCafe| All Rights Reserved |  Design by : ZOLMKOZ
+                       &copy 2021 ATN Store| All Rights Reserved |  Design by : ZOLMKOZ
 
 						</p>
                         
