@@ -1,11 +1,7 @@
 <?php
 session_start();
-
 if (!$_SESSION['admin_username']) {
-
-    header("Location: ../index.php");
-}
-
+    header("Location: ../index.php");}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,11 +17,7 @@ if (!$_SESSION['admin_username']) {
 
     <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-
-
-
 </head>
-
 <body>
     <div id="wrapper">
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -46,20 +38,13 @@ if (!$_SESSION['admin_username']) {
                     <li><a href="customers.php"> &nbsp; &nbsp; &nbsp; Customer Management</a></li>
                     <li><a href="orderdetails.php"> &nbsp; &nbsp; &nbsp; Order Details</a></li>
                     <li><a href="logout.php"> &nbsp; &nbsp; &nbsp; Logout</a></li>
-
-
                 </ul>
                 <ul class="nav navbar-nav navbar-right navbar-user">
                     <li class="dropdown messages-dropdown">
-                        <a href="#"><i class="fa fa-calendar"></i> <?php
-                                                                    $Today = date('y:m:d');
-                                                                    $new = date('l, F d, Y', strtotime($Today));
-                                                                    echo $new; ?></a>
-
+                        <a href="#"><i class="fa fa-calendar"></i> <?php $Today = date('y:m:d'); $new = date('l, F d, Y', strtotime($Today)); echo $new; ?></a>
                     </li>
                     <li class="dropdown user-dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <?php extract($_SESSION);
-                                                                                                                echo $admin_username; ?><b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <?php extract($_SESSION); echo $admin_username; ?><b class="caret"></b></a>
                         <ul class="dropdown-menu">
 
                             <li><a href="logout.php"><i class="fa fa-power-off"></i> Log Out</a></li>
@@ -68,14 +53,7 @@ if (!$_SESSION['admin_username']) {
                 </ul>
             </div>
         </nav>
-
         <div id="page-wrapper">
-
-
-
-
-
-
             <div id="my-carousel" class="carousel slide hero-slide hidden-xs" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
@@ -86,86 +64,56 @@ if (!$_SESSION['admin_username']) {
                     <li data-target="#my-carousel" data-slide-to="4"></li>
                     <li data-target="#my-carousel" data-slide-to="5"></li>
                 </ol>
-
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
-
                         <img src="../assets/img/6br.jpg" alt="Hero Slide" style="width:100%;height:500px;">
-
                         <div class="carousel-caption">
                             <h1 style="font-family:Century Gothic"><b></b></h1>
-
                             <h2></h2>
                         </div>
                     </div>
                     <div class="item">
                         <img src="../assets/img/5br.jpg" alt="..." style="width:100%;height:500px;">
-
                         <div class="carousel-caption">
-
                         </div>
                     </div>
                     <div class="item">
                         <img src="../assets/img/4br.jpg" alt="..." style="width:100%;height:500px;">
-
                         <div class="carousel-caption">
-
-
                             <p></p>
                         </div>
                     </div>
-
                     <div class="item">
                         <img src="../assets/img/3br.jpg" alt="..." style="width:100%;height:500px;">
-
                         <div class="carousel-caption">
-
-
                             <p></p>
                         </div>
                     </div>
-
                     <div class="item">
                         <img src="../assets/img/2br.jpg" alt="..." style="width:100%;height:500px;">
-
                         <div class="carousel-caption">
-
-
                             <p></p>
                         </div>
                     </div>
-
                     <div class="item">
                         <img src="../assets/img/7br.jpg" alt="..." style="width:100%;height:500px;">
-
                         <div class="carousel-caption">
-
-
                             <p></p>
                         </div>
                     </div>
                 </div>
-
                 <!-- Controls -->
                 <a class="left carousel-control" href="#my-carousel" role="button" data-slide="prev">
-
                     <span class="icon-prev"></span>
-
                 </a>
                 <a class="right carousel-control" href="#my-carousel" role="button" data-slide="next">
-
                     <span class="icon-next"></span>
                 </a>
-
                 <!-- #my-carousel-->
-
             </div>
-
-
             <br />
             <div class="alert alert-danger">
-
                 &nbsp; &nbsp;Welcome to ATN Store ! So if you're looking for a set of Marvel clubs, why not visit a ATN Store? It is that easy.
                 If you have a favorite ATN Store brand, this is the easiest and easiest way to get it.
                 Many famous brands of ATN Store clubs such as Iron-man, Hulk, Capital American,...
@@ -188,28 +136,16 @@ if (!$_SESSION['admin_username']) {
                 <br>
                 In 1968, while selling 50 million comic books a year, company founder Goodman revised the constraining distribution arrangement with Independent News he had reached under duress during the Atlas years, allowing him now to release as many titles as demand warranted. Late that year, he sold Marvel Comics and its parent company, Magazine Management, to the Perfect Film and Chemical Corporation,
                 though he remained as publisher. In 1969, Goodman finally ended his distribution deal with Independent by signing with Curtis Circulation Company.
-
             </div>
             <br />
-
             <div class="alert alert-default" style="background-color:#033c73;">
                 <p style="color:white;text-align:center;">
                     &copy 2021 ATN Store | All Rights Reserved | Design by : zolmkoz
-
                 </p>
-
             </div>
-
         </div>
     </div>
-
-
-
-
     </div>
-
-
-
     </div>
     <!-- /#wrapper -->
 
