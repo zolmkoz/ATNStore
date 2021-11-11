@@ -116,9 +116,10 @@ if(!$_SESSION['admin_username'])
                   <th>Image</th>
                   <th>Name of Item</th>
 				  <th>Price</th>
+                  <th>Quantity</th>
 				  <th>Date Added</th>
-                  <th>Actions</th>
-                 
+                  <th>Store branch</th>
+                  <th>Actions</th>                
                 </tr>
               </thead>
               <tbody>
