@@ -35,8 +35,7 @@ $upload_dir = 'item_images/';
 $imgExt = strtolower(pathinfo($imgFile,PATHINFO_EXTENSION)); 
 $valid_extensions = array('jpeg', 'jpg', 'png', 'gif'); 
 //$itempic = rand(1000,1000000).".".$imgExt;
-$itempic = pathinfo($_FILES['picture']['name'], PATHINFO_FILENAME);
-
+$itempic = explode(".", $_FILES['picture']['name']);
 
 				
 	
