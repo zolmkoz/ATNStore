@@ -237,7 +237,22 @@ include("config.php");
 							</div>
 							
 							
+							</div>
+
+                            <p>Quantity:</p>
+                            <div class="form-group">
 							
+                                <input class="form-control" placeholder="Quantity" name="item_name" type="text" required>
+                           
+							 
+							</div>
+                            <p>Store branch:</p>
+                            <div class="form-group">
+							
+                                <input class="form-control" placeholder="Store branch" name="item_name" type="text" required>
+                           
+							 
+							</div>
 							
 							
 							
