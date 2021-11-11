@@ -15,6 +15,9 @@ if(isset($_POST['item_save']))
 {
 $item_name = $_POST['item_name'];
 $item_price = $_POST['item_price'];
+$item_quantity = $_POST['item_quantity'];
+$item_store_branch = $_POST['item_store_branch'];
+
  $check_item="select * from items WHERE item_name='$item_name'";
     $run_query=mysqli_query($DB_con,$check_item);
 
@@ -38,7 +41,7 @@ $itempic = rand(1000,1000000).".".$imgExt;
 		
 				if($imgSize < 5000000)				{
 					move_uploaded_file($tmp_dir,$upload_dir.$itempic);
-					$saveitem="insert into items (item_name,item_price,item_image,item_date) VALUE ('$item_name','$item_price','$itempic',CURDATE())";
+					$saveitem="insert into items (item_name,item_quantity,item_store_branch,item_price,item_image,item_date) VALUE ('$item_name','$item_quantity','$item_store_branch'$item_price','$itempic',CURDATE())";
 					mysqli_query($DB_con,$saveitem);
 					 echo "<script>alert('Data successfully saved!')</script>";				
 					 echo "<script>window.open('items.php','_self')</script>";
