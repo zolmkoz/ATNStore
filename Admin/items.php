@@ -226,8 +226,7 @@ include("config.php");
                    <fieldset>				
                             <p>Name of Item:</p>
                             <div class="form-group">						
-                                <input class="form-control" placeholder="Name of Item" name="item_name" type="text" required>                   
-							</div>
+                                <input class="form-control" placeholder="Name of Item" name="item_name" type="text" required>                   							
 							</div>
                             <p>Quantity:</p>
                             <div class="form-group">							
