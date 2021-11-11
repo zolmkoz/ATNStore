@@ -15,8 +15,6 @@ if(isset($_POST['item_save']))
 {
 $item_name = $_POST['item_name'];
 $item_price = $_POST['item_price'];
-
- 
  $check_item="select * from items WHERE item_name='$item_name'";
     $run_query=mysqli_query($DB_con,$check_item);
 

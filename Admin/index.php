@@ -236,6 +236,14 @@ if(!$_SESSION['admin_username'])
                            
 							 
 							</div>
+
+                            <p>Quanity:</p>
+                            <div class="form-group">
+							
+                                <input class="form-control" placeholder="Quantity" name="item_name" type="text" required>
+                           
+							 
+							</div>
 							
 							
 							
