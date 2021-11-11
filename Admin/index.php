@@ -243,9 +243,7 @@ if(!$_SESSION['admin_username'])
 							<div class="form-group">				 
                                 <input class="form-control"  type="file" name="item_image" accept="image/*" required/>                           
 							</div>		   
-					 </fieldset>
-                  
-            
+					 </fieldset>                           
               </div>
               <div class="modal-footer">
                
@@ -259,9 +257,9 @@ if(!$_SESSION['admin_username'])
             </div>
           </div>
         </div>
-	  	  <script>
+<script>
    
-    $(document).ready(function() {
+$(document).ready(function() {
         $('#priceinput').keypress(function (event) {
             return isNumber(event, this)
         });
