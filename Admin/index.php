@@ -221,52 +221,27 @@ if(!$_SESSION['admin_username'])
                 <h2 style="color:white" class="modal-title" id="myModalLabel">Upload Items</h2>
               </div>
               <div class="modal-body">
-         
-				
-			
-				
 				 <form enctype="multipart/form-data" method="post" action="additems.php">
                    <fieldset>
-					
-						
                             <p>Name of Item:</p>
-                            <div class="form-group">
-							
-                                <input class="form-control" placeholder="Name of Item" name="item_name" type="text" required>
-                           
-							 
+                            <div class="form-group">							
+                                <input class="form-control" placeholder="Name of Item" name="item_name" type="text" required>                          							 
 							</div>
-
                             <p>Quantity:</p>
-                            <div class="form-group">
-							
-                                <input class="form-control" placeholder="Quantity" name="item_name" type="text" required>
-                           
-							 
+                            <div class="form-group">							
+                                <input class="form-control" placeholder="Quantity" name="item_name" type="text" required>                        							 
 							</div>
                             <p>Store branch:</p>
-                            <div class="form-group">
-							
-                                <input class="form-control" placeholder="Store branch" name="item_name" type="text" required>
-                           
-							 
-							</div>												
-							
+                            <div class="form-group">							
+                                <input class="form-control" placeholder="Store branch" name="item_name" type="text" required>                    							 
+							</div>																			
 							<p>Price:</p>
-                            <div class="form-group">
-							
-                                <input id="priceinput" class="form-control" placeholder="Price" name="item_price" type="text" required>
-                           
-							 
-							</div>
-							
-							
+                            <div class="form-group">							
+                                <input id="priceinput" class="form-control" placeholder="Price" name="item_price" type="text" required>                         							 
+							</div>						
 							<p>Choose Image:</p>
-							<div class="form-group">
-						
-							 
-                                <input class="form-control"  type="file" name="item_image" accept="image/*" required/>
-                           
+							<div class="form-group">				 
+                                <input class="form-control"  type="file" name="item_image" accept="image/*" required/>                           
 							</div>		   
 					 </fieldset>
                   
