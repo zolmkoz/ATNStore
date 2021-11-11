@@ -142,7 +142,9 @@ include("config.php");
 				 </td>
                  <td><?php echo $item_name; ?></td>
 				 <td>&#36; <?php echo $item_price; ?></td>
+                 <td><?php echo $item_quantity; ?></td>                 
 				 <td><?php echo $item_date; ?></td>
+                 <td><?php echo $item_store_branch; ?></td>
 				 
 				 <td>
 				
