@@ -34,10 +34,7 @@ $imgSize = $_FILES['item_image']['size'];
 $upload_dir = 'item_images/';
 $imgExt = strtolower(pathinfo($imgFile,PATHINFO_EXTENSION)); 
 $valid_extensions = array('jpeg', 'jpg', 'png', 'gif'); 
-//$itempic = rand(1000,1000000).".".$imgExt;
-$itempic = explode(".", $_FILES['picture']['name']);
-
-				
+$itempic = rand(1000,1000000).".".$imgExt;	
 	
 			if(in_array($imgExt, $valid_extensions)){			
 		
