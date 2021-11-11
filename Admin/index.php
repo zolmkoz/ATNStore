@@ -244,10 +244,10 @@ if(!$_SESSION['admin_username'])
                            
 							 
 							</div>
-                            <p>Quantity:</p>
+                            <p>Store branch:</p>
                             <div class="form-group">
 							
-                                <input class="form-control" placeholder="Quantity" name="item_name" type="text" required>
+                                <input class="form-control" placeholder="Store branch" name="item_name" type="text" required>
                            
 							 
 							</div>												
@@ -267,18 +267,7 @@ if(!$_SESSION['admin_username'])
 							 
                                 <input class="form-control"  type="file" name="item_image" accept="image/*" required/>
                            
-							</div>
-
-                            </div>
-                            <p>Store branch:</p>
-                            <div class="form-group">
-							
-                                <input class="form-control" placeholder="Store branch" name="item_name" type="text" required>
-                           
-							 
-							</div>
-				   
-				   
+							</div>		   
 					 </fieldset>
                   
             
